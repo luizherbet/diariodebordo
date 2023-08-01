@@ -8,9 +8,9 @@
         <div class="posts">
           <% for(var i=0; i<diarioposts.length; i++){ %>
             <div class="post">
-              <div class="titulo"><%= diarioposts[i].titulo %></div>
-              <div class="nota"><%= diarioposts[i].nota %></div>
-              <div class="key"><%= diarioposts[i].keys %></div>
+              <div class="titulo"><%= diarioposts[i].titulo._id %></div>
+              <div class="nota"><%= diarioposts[i].nota._id %></div>
+              <div class="key"><%= diarioposts[i].keys._id %></div>
             </div>
           <% } %>
         </div>
