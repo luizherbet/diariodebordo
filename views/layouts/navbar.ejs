@@ -1,0 +1,23 @@
+<header>
+  <div class="left">
+    <a class="logo" href="/">
+      <img src="/img/logo.PNG" alt="Logo" />
+    </a>
+    <p>Diário de Bordo</p>
+  </div>
+  <div class="right">
+    <div class="nav-bar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <% if(loggedIn) {%>
+        <li><a href="/posts/:id">Todas</a></li>
+        <li><a href="/post/new">Nova Nota</a></li>
+        <li><a class="login" href="/logout">Logout</a></li>
+        <% } %> <% if(!loggedIn){ %>
+        <li><a href="/user/new">Cadastre-se</a></li>
+        <li><a class="login" href="/login">Login</a></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</header>

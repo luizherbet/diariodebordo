@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+  <body>
+    <%- include('layouts/navbar'); -%>
+    <main>
+      <div>
+        <h1>Nova Nota!</h1>
+        <form action="/post/store" method="post">
+          <p>
+            <label for="text">Título :</label>
+          </p>
+          <input type="text" id="titulo" name="titulo" />
+          <p>
+            <label for="nota">Notas :</label>
+          </p>
+          <textarea name="nota" id="nota" cols="100" rows="5"></textarea>
+          <p>
+            <label for="keys">Key-words :</label>
+          </p>
+          <input type="text" id="keys" name="keys" />
+
+          <p>
+            <button type="submit" id="create" name="create">Criar</button>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <%- include('layouts/footer'); -%>
+  </body>
+</html>

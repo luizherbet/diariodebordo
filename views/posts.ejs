@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+  <body>
+    <%- include('layouts/navbar'); -%>
+    <main>
+      <div>
+        <div class="posts">
+          <% for(var i=0; i<diarioposts.length; i++){ %>
+            <div class="post">
+              <div class="titulo"><%= diarioposts[i].titulo %></div>
+              <div class="nota"><%= diarioposts[i].nota %></div>
+              <div class="key"><%= diarioposts[i].keys %></div>
+            </div>
+          <% } %>
+        </div>
+        </div>
+      <%- include('layouts/footer'); -%>
+
+    </main>
+  </body>
+</html>

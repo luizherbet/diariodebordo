@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+  <body>
+    <%- include('layouts/navbar'); -%>
+    <main>
+      <div class="mainlayer">
+        <form action="/user/login" method="post">
+          <p>
+            <label for="usuario">Usuário :</label>
+          </p>
+          <input type="text" id="usuario" name="usuario" />
+
+          <p>
+            <label for="senha">Senha :</label>
+          </p>
+          <input type="password" id="senha" name="senha" />
+
+          <p>
+            <button type="submit" id="registrar">Entrar</button>
+          </p>
+        </form>
+      </div>
+    </main>
+    <%- include('layouts/footer'); -%>
+  </body>
+</html>
